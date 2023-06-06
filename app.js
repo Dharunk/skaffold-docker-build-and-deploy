@@ -6,7 +6,7 @@ const port = 3020;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello, Dk!.. Welcome to sample skaffold docker build example\n');
+  res.end('Hello!.. Welcome to sample skaffold docker build example\n');
 });
 
 server.listen(port, hostname, () => {
