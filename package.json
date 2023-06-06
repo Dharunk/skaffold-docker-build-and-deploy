@@ -1,0 +1,11 @@
+{
+    "name": "skaffold-example",
+    "version": "1.0.0",
+    "description": "Skaffold Docker example",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "author": "DharunKumar",
+    "license": "DK"
+  }
+  

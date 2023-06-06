@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: skaffold-example
+  labels:
+    app: skaffold-example
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: skaffold-example
+  template:
+    metadata:
+      labels:
+        app: skaffold-example
+    spec:
+      containers:
+        - name: skaffold-example
+          image: skaffold-example
+          ports:
+            - containerPort: 3020
